@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="487.0" style="-fx-background-color: #DFDFDF;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Region prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: #282828;" />
+      <Label layoutX="52.0" layoutY="20.0" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="6.0" layoutY="18.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="0.0" style="-fx-background-color: #282828;">
+         <graphic>
+            <ImageView fitHeight="85.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/arrow-left-long-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="17.0" layoutY="84.0" prefHeight="111.0" prefWidth="454.0" style="-fx-background-color: white; -fx-background-radius: 9;">
+         <children>
+            <Circle layoutX="56.0" layoutY="56.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="121.0" layoutY="23.0" text="Username">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="121.0" layoutY="53.0" text="Balance" />
+            <Button layoutX="227.0" layoutY="26.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="0.0" style="-fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/gear-mono.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="17.0" layoutY="212.0" prefHeight="278.0" prefWidth="454.0" style="-fx-background-color: white; -fx-background-radius: 9;">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Transactions">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="23.0" layoutY="45.0" prefHeight="73.0" prefWidth="228.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 9;">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="52.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@Resources/placeholder.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="2.0" text="Status" textFill="#ffbc00">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="28.0" text="Item Name" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="23.0" layoutY="125.0" prefHeight="73.0" prefWidth="228.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 9;">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="52.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@Resources/placeholder.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="67.0" layoutY="2.0" text="Status" textFill="#ffbc00">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="67.0" layoutY="28.0" text="Item Name" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="17.0" layoutY="508.0" prefHeight="200.0" prefWidth="454.0" style="-fx-background-color: white; -fx-background-radius: 9;">
+         <children>
+            <Button alignment="TOP_LEFT" layoutX="16.0" layoutY="15.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="429.0" style="-fx-background-color: white;" text="Complaint">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/face-tired-mono.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="16.0" layoutY="141.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="429.0" style="-fx-background-color: white;" text="Customer Support">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/phone-duotone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="TOP_LEFT" layoutX="16.0" layoutY="78.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="429.0" style="-fx-background-color: white;" text="FAQ">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Resources/question-filled.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

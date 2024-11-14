@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="487.0" style="-fx-background-color: #DFDFDF;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Region prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: #282828;" />
+      <VBox layoutX="60.0" layoutY="24.0" prefHeight="22.0" prefWidth="271.0">
+         <children>
+            <TextField fx:id="tfSearch" prefHeight="25.0" prefWidth="196.0" promptText="Search" style="-fx-background-color: #5e5e5e; -fx-background-radius: 6;" />
+         </children>
+      </VBox>
+      <Button layoutX="390.0" layoutY="21.0" mnemonicParsing="false" prefHeight="6.0" prefWidth="0.0" style="-fx-background-color: #282828;">
+         <graphic>
+            <ImageView fx:id="btnNotif" fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/bell-mono.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="430.0" layoutY="18.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="16.0" style="-fx-background-color: #282828;">
+         <graphic>
+            <ImageView fx:id="btnCart" fitHeight="73.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/cart-mono.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="346.0" layoutY="19.0" mnemonicParsing="false" prefHeight="2.0" prefWidth="0.0" style="-fx-background-color: #282828;">
+         <graphic>
+            <ImageView fx:id="btnMail" fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/envelope-mono.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="8.0" layoutY="18.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="6.0" style="-fx-background-color: #282828;">
+         <graphic>
+            <ImageView fx:id="btnMenu" fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/bars-line.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Separator layoutY="73.0" prefHeight="3.0" prefWidth="487.0" />
+      <AnchorPane layoutX="3.0" layoutY="76.0" prefHeight="200.0" prefWidth="481.0" style="-fx-border-radius: 6;">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="481.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Resources/placeholder.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="8.0" layoutY="291.0" prefHeight="32.0" prefWidth="128.0" text="Recomended">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutY="276.0" prefHeight="3.0" prefWidth="487.0" />
+      <AnchorPane layoutX="15.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Resources/placeholder.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="138.0" text="Price">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="16.0" layoutX="6.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/star-filled.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="175.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Resources/placeholder.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="138.0" text="Price">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="16.0" layoutX="6.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/star-filled.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="332.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Resources/placeholder.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="138.0" text="Price">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="16.0" layoutX="6.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/star-filled.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Resources/placeholder.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="138.0" text="Price">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="16.0" layoutX="6.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/star-filled.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="175.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Resources/placeholder.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="138.0" text="Price">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="16.0" layoutX="6.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/star-filled.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="332.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@Resources/placeholder.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="138.0" text="Price">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="16.0" layoutX="6.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/star-filled.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
