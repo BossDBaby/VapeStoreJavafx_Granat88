@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="487.0" style="-fx-background-color: #DFDFDF;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="487.0" style="-fx-background-color: #21201e;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Region prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: #282828;" />
       <VBox layoutX="60.0" layoutY="24.0" prefHeight="22.0" prefWidth="271.0">
@@ -65,13 +65,13 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Label layoutX="8.0" layoutY="291.0" prefHeight="32.0" prefWidth="128.0" text="Recomended">
+      <Label layoutX="8.0" layoutY="291.0" prefHeight="32.0" prefWidth="128.0" text="Recomended" textFill="#b7a18f">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
       <Separator layoutY="276.0" prefHeight="3.0" prefWidth="487.0" />
-      <AnchorPane layoutX="15.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+      <AnchorPane layoutX="15.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
             <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
@@ -100,7 +100,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="175.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+      <AnchorPane layoutX="175.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
             <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
@@ -129,7 +129,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="332.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+      <AnchorPane layoutX="332.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
             <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
@@ -158,7 +158,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="15.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+      <AnchorPane layoutX="15.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
             <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
@@ -187,7 +187,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="175.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+      <AnchorPane layoutX="175.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
             <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
@@ -216,7 +216,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="332.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 6;">
+      <AnchorPane layoutX="332.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
             <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>

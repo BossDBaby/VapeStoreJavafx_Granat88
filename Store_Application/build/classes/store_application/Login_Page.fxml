@@ -9,14 +9,17 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="489.0" style="-fx-background-color: #F2F2F0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="489.0" style="-fx-background-color: #F2F2F0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store_application.Login_Page">
    <top>
-      <AnchorPane prefHeight="346.0" prefWidth="490.0" style="-fx-background-color: #C4AEF2;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="346.0" prefWidth="490.0" style="-fx-background-color: #071037;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="6.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #C4AEF2;">
+            <Button fx:id="backToHomePageButton" layoutX="6.0" layoutY="18.0" mnemonicParsing="false" onAction="#backToHomePageButtonOnAction" style="-fx-background-color: #071037;" textFill="#1e1f1b">
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -25,56 +28,92 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Label alignment="CENTER" layoutX="75.0" layoutY="150.0" style="-fx-background-color: #;" text="Valiburn Vaping" textFill="#f0f000e2">
-               <font>
-                  <Font name="Verdana Bold" size="18.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="103.0" fitWidth="266.0" layoutX="53.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Resources/Logo.png" />
-               </image>
-            </ImageView>
-            <Label alignment="CENTER" layoutX="74.0" layoutY="198.0" style="-fx-blend-mode: plus-lighter;" text="WELCOME BACK" textFill="#242424">
+            <Label alignment="CENTER" layoutX="61.0" layoutY="188.0" text="WELCOME BACK">
                <font>
                   <Font name="Verdana Bold" size="36.0" />
                </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.5639810426540284" startX="0.40284360189573465" startY="0.17061611374407584">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9333333373069763" green="0.43921568989753723" blue="0.7058823704719543" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.1568627506494522" green="0.7137255072593689" blue="0.7215686440467834" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
             </Label>
-            <Text fill="#262626" layoutX="61.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We are glad to see you again! Get access to your Orders, Wishlist and Recommendations." wrappingWidth="303.8612060546875">
+            <Text layoutX="61.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We are glad to see you again! Get access to your Orders, Wishlist and Recommendations." wrappingWidth="303.8612060546875">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.5639810426540284" startX="0.40284360189573465" startY="0.17061611374407584">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9333333373069763" green="0.43921568989753723" blue="0.7058823704719543" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.1568627506494522" green="0.7137255072593689" blue="0.7215686440467834" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
             </Text>
+            <ImageView fx:id="brandingImageView" fitHeight="98.0" fitWidth="177.0" layoutX="61.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/logo_warna.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </top>
-   <center>
-      <AnchorPane prefHeight="264.0" prefWidth="490.0" style="-fx-background-color: #;" BorderPane.alignment="CENTER">
+   <right>
+      <AnchorPane prefHeight="264.0" prefWidth="490.0" style="-fx-background-color: #121f30;" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" layoutX="127.0" layoutY="471.0" prefWidth="234.0" style="-fx-background-color: #;" text="Copyright (c). All RIght Reserved" textFill="#262626e3">
+            <Label alignment="CENTER" layoutX="127.0" layoutY="471.0" prefWidth="234.0" text="Copyright (c). All RIght Reserved" textFill="#d7dedce3">
                <font>
                   <Font name="Verdana" size="14.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="166.0" layoutY="86.0" style="-fx-background-color: #;" text="Secure Login" textFill="#262626e3">
+            <Label alignment="CENTER" layoutX="166.0" layoutY="86.0" text="Secure Login" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="24.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="32.0" layoutY="184.0" style="-fx-background-color: #;" text="Username" textFill="#262626e3">
+            <Label alignment="CENTER" layoutX="47.0" layoutY="195.0" text="Username" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="usernameTextField" layoutX="184.0" layoutY="184.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Username" />
-            <Label alignment="CENTER" layoutX="32.0" layoutY="260.0" style="-fx-background-color: #;" text="Password" textFill="#262626e3">
+            <TextField fx:id="usernameTextField" layoutX="185.0" layoutY="194.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Username" style="-fx-background-color: rgba(0,0,0,0.0); -fx-text-fill: #ee70b4;">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></TextField>
+            <Label alignment="CENTER" layoutX="50.0" layoutY="262.0" text="Password" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <PasswordField fx:id="passwordPassField" layoutX="184.0" layoutY="260.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Password" />
-            <Button fx:id="loginButton" layoutX="149.0" layoutY="325.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" text="Login" />
-            <Label layoutX="142.0" layoutY="412.0" prefHeight="16.0" prefWidth="145.0" text="Don't have account ?">
+            <PasswordField fx:id="passwordPassField" layoutX="185.0" layoutY="260.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Password" style="-fx-background-color: rgba(0,0,0,0.0); -fx-text-fill: #ee70b4;">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></PasswordField>
+            <Button fx:id="loginButton" layoutX="149.0" layoutY="325.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="44.0" prefWidth="190.0" style="-fx-background-radius: 20; -fx-background-color: rgba(215,222,220,0.9);" text="Login" textFill="#121f30">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font></Button>
+            <Label layoutX="142.0" layoutY="412.0" prefHeight="16.0" prefWidth="145.0" text="Don't have account ?" textFill="#d7dedc">
                <font>
                   <Font name="Verdana" size="13.0" />
                </font>
@@ -84,7 +123,17 @@
                   <Font name="Verdana Bold" size="13.0" />
                </font>
             </Hyperlink>
+            <ImageView fx:id="lockImageView" fitHeight="82.0" fitWidth="91.0" layoutX="203.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/lock-kaki.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="invalidLoginLabel" layoutX="149.0" layoutY="302.0" textFill="#ee70b4">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
-   </center>
+   </right>
 </BorderPane>

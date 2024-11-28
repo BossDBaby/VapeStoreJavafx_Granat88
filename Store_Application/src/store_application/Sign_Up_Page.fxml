@@ -9,14 +9,17 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="489.0" style="-fx-background-color: #F2F2F0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="489.0" style="-fx-background-color: #F2F2F0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <AnchorPane prefHeight="346.0" prefWidth="490.0" style="-fx-background-color: #C4AEF2;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="346.0" prefWidth="490.0" style="-fx-background-color: #071037;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="6.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #C4AEF2;">
+            <Button layoutX="6.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #071037;">
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -25,74 +28,129 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Label alignment="CENTER" layoutX="75.0" layoutY="150.0" style="-fx-background-color: #;" text="Valiburn Vaping" textFill="#f0f000e2">
-               <font>
-                  <Font name="Verdana Bold" size="18.0" />
-               </font>
-            </Label>
             <ImageView fitHeight="103.0" fitWidth="266.0" layoutX="53.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Resources/Logo.png" />
+                  <Image url="@Resources/logo_warna.png" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" layoutX="53.0" layoutY="191.0" style="-fx-blend-mode: plus-lighter;" text="Looks New" textFill="#242424">
+            <Label alignment="CENTER" layoutX="53.0" layoutY="191.0" style="-fx-blend-mode: plus-lighter;" text="Looks New">
                <font>
                   <Font name="Verdana Bold" size="36.0" />
                </font>
+               <textFill>
+                  <LinearGradient endX="0.8530805687203792" endY="0.49763033175355453" startX="0.3459715639810427" startY="0.25118483412322273">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.843137264251709" green="0.8705882430076599" blue="0.8627451062202454" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.1568627506494522" green="0.7137255072593689" blue="0.7215686440467834" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
             </Label>
-            <Text fill="#262626" layoutX="53.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join our group in few minutes!" wrappingWidth="358.26123046875">
+            <Text layoutX="53.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join our group in few minutes!" wrappingWidth="358.26123046875">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
+               <fill>
+                  <LinearGradient endX="0.8530805687203792" endY="0.49763033175355453" startX="0.2180094786729858" startY="0.25118483412322273">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.843137264251709" green="0.8705882430076599" blue="0.8627451062202454" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.1568627506494522" green="0.7137255072593689" blue="0.7215686440467834" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
             </Text>
-            <Text fill="#262626" layoutX="53.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up with your details to get started" wrappingWidth="358.26123046875">
+            <Text layoutX="53.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up with your details to get started" wrappingWidth="358.26123046875">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
+               <fill>
+                  <LinearGradient endX="0.8530805687203792" endY="0.49763033175355453" startX="0.3459715639810427" startY="0.25118483412322273">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.843137264251709" green="0.8705882430076599" blue="0.8627451062202454" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.1568627506494522" green="0.7137255072593689" blue="0.7215686440467834" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
             </Text>
          </children>
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane prefHeight="264.0" prefWidth="490.0" style="-fx-background-color: #;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="264.0" prefWidth="490.0" style="-fx-background-color: #121f30;" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" layoutX="184.0" layoutY="38.0" style="-fx-background-color: #;" text="Register" textFill="#262626e3">
+            <Label alignment="CENTER" layoutX="186.0" layoutY="28.0" style="-fx-background-color: #;" text="Register" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="24.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="21.0" layoutY="109.0" style="-fx-background-color: #;" text="First Name" textFill="#262626e3">
+            <Label alignment="CENTER" layoutX="81.0" layoutY="97.0" style="-fx-background-color: #;" text="First Name" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="firstnameTextField" layoutX="184.0" layoutY="105.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Username" />
-            <Label alignment="CENTER" layoutX="22.0" layoutY="153.0" style="-fx-background-color: #;" text="Last Name" textFill="#262626e3">
+            <TextField fx:id="firstnameTextField" alignment="CENTER" layoutX="25.0" layoutY="124.0" prefHeight="26.0" prefWidth="205.0" promptText="First Name" style="-fx-background-color: rgba(0,0,0,0.0);">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></TextField>
+            <Label alignment="CENTER" layoutX="316.0" layoutY="97.0" style="-fx-background-color: #;" text="Last Name" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="lastnameTextField11" layoutX="184.0" layoutY="150.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Username" />
-            <Label alignment="CENTER" layoutX="21.0" layoutY="198.0" style="-fx-background-color: #;" text="Username" textFill="#262626e3">
+            <TextField fx:id="lastnameTextField11" alignment="CENTER" layoutX="259.0" layoutY="124.0" prefHeight="26.0" prefWidth="205.0" promptText="Last Name" style="-fx-background-color: rgba(0,0,0,0.0);" />
+            <Label alignment="CENTER" layoutX="75.0" layoutY="190.0" style="-fx-background-color: #;" text="Enter Username" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="usernameTextField" layoutX="184.0" layoutY="195.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Username" />
-            <Label alignment="CENTER" layoutX="24.0" layoutY="245.0" style="-fx-background-color: #;" text="Password" textFill="#262626e3">
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="237.0" layoutY="188.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter Username" style="-fx-background-color: rgba(0,0,0,0.0);">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></TextField>
+            <Label alignment="CENTER" layoutX="78.0" layoutY="236.0" style="-fx-background-color: #;" text="Enter Password" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="17.0" />
                </font>
             </Label>
-            <PasswordField fx:id="setpasswordPassField" layoutX="184.0" layoutY="240.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Password" />
-            <Label alignment="CENTER" layoutX="21.0" layoutY="289.0" style="-fx-background-color: #;" text="Confirm Password" textFill="#262626e3">
+            <PasswordField fx:id="setpasswordPassField" alignment="CENTER" layoutX="237.0" layoutY="234.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter Password" style="-fx-background-color: rgba(0,0,0,0.0);">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font></PasswordField>
+            <Label alignment="CENTER" layoutX="78.0" layoutY="279.0" style="-fx-background-color: #;" text="Confirm Password" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="16.0" />
                </font>
             </Label>
-            <PasswordField fx:id="confirmpasswordPassField" layoutX="184.0" layoutY="285.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Password" />
-            <Button fx:id="loginButton" layoutX="149.0" layoutY="346.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" text="Sign Up" />
-            <Label layoutX="127.0" layoutY="412.0" prefHeight="16.0" prefWidth="159.0" text="Already have account ?">
+            <PasswordField fx:id="confirmpasswordPassField" alignment="CENTER" layoutX="245.0" layoutY="276.0" prefHeight="26.0" prefWidth="205.0" promptText="Confirm Password" style="-fx-background-color: rgba(0,0,0,0.0);" />
+            <Button fx:id="loginButton" layoutX="149.0" layoutY="346.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-radius: 20; -fx-background-color: rgba(215,222,220,0.9);" text="Sign Up" textFill="#121f30">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font></Button>
+            <Label layoutX="127.0" layoutY="412.0" prefHeight="16.0" prefWidth="159.0" text="Already have account ?" textFill="#d7dedc">
                <font>
                   <Font name="Verdana" size="13.0" />
                </font>
@@ -102,7 +160,7 @@
                   <Font name="Verdana Bold" size="13.0" />
                </font>
             </Hyperlink>
-            <Label alignment="CENTER" layoutX="127.0" layoutY="471.0" prefWidth="234.0" style="-fx-background-color: #;" text="Copyright (c). All RIght Reserved" textFill="#262626e3">
+            <Label alignment="CENTER" layoutX="127.0" layoutY="471.0" prefWidth="234.0" style="-fx-background-color: #;" text="Copyright (c). All RIght Reserved" textFill="#d7dedce3">
                <font>
                   <Font name="Verdana" size="14.0" />
                </font>

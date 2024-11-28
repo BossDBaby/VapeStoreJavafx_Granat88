@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="487.0" style="-fx-background-color: #DFDFDF;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="487.0" style="-fx-background-color: #272a2f;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Region prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: #282828;" />
       <Label layoutX="52.0" layoutY="20.0" text="Notifications" textFill="WHITE">
@@ -26,7 +26,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <AnchorPane layoutY="75.0" prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: #b3fff7;">
+      <AnchorPane layoutY="75.0" prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: d7dedc;">
          <children>
             <Label layoutX="42.0" layoutY="14.0" text="Notification">
                <font>
@@ -34,10 +34,15 @@
                </font>
             </Label>
             <Label layoutX="42.0" layoutY="37.0" text="Description" />
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="17.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/bell-hytam.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <Separator layoutY="71.0" prefHeight="4.0" prefWidth="487.0" />
-      <AnchorPane layoutY="152.0" prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: #b3fff7;">
+      <AnchorPane layoutY="152.0" prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: d7dedc;">
          <children>
             <Label layoutX="41.0" layoutY="17.0" text="Notification">
                <font>
@@ -45,6 +50,11 @@
                </font>
             </Label>
             <Label layoutX="41.0" layoutY="40.0" text="Description" />
+            <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="17.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Resources/bell-hytam.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
       <Separator layoutY="148.0" prefHeight="4.0" prefWidth="487.0" />

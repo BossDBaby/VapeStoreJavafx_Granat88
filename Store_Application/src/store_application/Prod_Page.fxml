@@ -9,10 +9,10 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="858.0" prefWidth="489.0" style="-fx-background-color: #dfdfdf;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store_application.Store_Application">
+<AnchorPane id="AnchorPane" prefHeight="858.0" prefWidth="489.0" style="-fx-background-color: #21201e;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store_application.Store_Application">
    <children>
       <Region prefHeight="73.0" prefWidth="489.0" style="-fx-background-color: #282828;" />
-      <Region layoutY="343.0" prefHeight="152.0" prefWidth="488.0" style="-fx-background-color: #fefcff;" />
+      <Region layoutY="343.0" prefHeight="152.0" prefWidth="488.0" style="-fx-background-color: #272a2f;" />
       <Button layoutX="6.0" layoutY="18.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="0.0" style="-fx-background-color: #282828;">
          <graphic>
             <ImageView fitHeight="85.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
@@ -27,20 +27,20 @@
             <Image url="@Resources/placeholder.png" />
          </image>
       </ImageView>
-      <Label layoutX="9.0" layoutY="429.0" text="Nama Produk">
+      <Label layoutX="9.0" layoutY="429.0" text="Nama Produk" textFill="#d7dedc">
          <font>
-            <Font size="15.0" />
+            <Font name="Verdana Bold" size="15.0" />
          </font>
       </Label>
-      <Region layoutX="3.0" layoutY="351.0" prefHeight="64.0" prefWidth="482.0" style="-fx-background-color: #006652; -fx-background-radius: 8;" />
-      <Label layoutX="22.0" layoutY="368.0" text="Price" textFill="#84f800">
+      <Region layoutX="3.0" layoutY="351.0" prefHeight="64.0" prefWidth="482.0" style="-fx-background-color: #272a2f; -fx-background-radius: 8;" />
+      <Label layoutX="22.0" layoutY="368.0" text="Price" textFill="#ee70b4">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <Region layoutX="1.0" layoutY="502.0" prefHeight="84.0" prefWidth="488.0" style="-fx-background-color: #fefcff;" />
-      <Region layoutY="806.0" prefHeight="52.0" prefWidth="489.0" style="-fx-background-color: #fefcff;" />
-      <Button layoutX="277.0" layoutY="814.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="208.0" style="-fx-background-color: #16c906;" text="Add to Cart" textFill="WHITE">
+      <Region layoutX="1.0" layoutY="502.0" prefHeight="84.0" prefWidth="488.0" style="-fx-background-color: #272a2f;" />
+      <Region layoutY="806.0" prefHeight="52.0" prefWidth="489.0" style="-fx-background-color: #cfcfcd;" />
+      <Button layoutX="277.0" layoutY="814.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="208.0" style="-fx-background-color: #45ddbf;" text="Add to Cart" textFill="#272a2f">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
@@ -52,21 +52,21 @@
          </image>
       </ImageView>
       <Label layoutX="108.0" layoutY="465.0" text="5.0" />
-      <Label layoutX="22.0" layoutY="465.0" text="Sold:" />
-      <Label layoutX="9.0" layoutY="510.0" text="Reviews">
+      <Label layoutX="22.0" layoutY="465.0" text="Sold:" textFill="#d7dedc" />
+      <Label layoutX="9.0" layoutY="510.0" text="Reviews" textFill="#d7dedc">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button layoutX="407.0" layoutY="505.0" mnemonicParsing="false" style="-fx-background-color: #fefcff;" text="See All" textFill="#006652">
+      <Button layoutX="407.0" layoutY="505.0" mnemonicParsing="false" style="-fx-background-color: #272a2f;" text="See All" textFill="#45ddbf">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Region layoutY="593.0" prefHeight="207.0" prefWidth="489.0" style="-fx-background-color: #fefcff;" />
-      <Label layoutX="9.0" layoutY="601.0" text="Product Description">
+      <Region layoutY="593.0" prefHeight="207.0" prefWidth="489.0" style="-fx-background-color: #272a2f;" />
+      <Label layoutX="9.0" layoutY="601.0" text="Product Description" textFill="#d7dedc">
          <font>
-            <Font name="System Bold" size="15.0" />
+            <Font name="Verdana Bold" size="15.0" />
          </font>
       </Label>
       <Button layoutX="441.0" layoutY="18.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="16.0" style="-fx-background-color: #282828;">
@@ -78,8 +78,8 @@
             </ImageView>
          </graphic>
       </Button>
-      <Spinner layoutX="108.0" layoutY="820.0" />
-      <Button layoutX="32.0" layoutY="813.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="16.0" style="-fx-background-color: #fefcff; -fx-border-color: #000000; -fx-border-radius: 8;">
+      <Spinner fx:id="spinnerProd" editable="true" layoutX="108.0" layoutY="820.0" />
+      <Button layoutX="32.0" layoutY="813.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="16.0" style="-fx-background-color: #cfcfcd; -fx-border-color: #000000; -fx-border-radius: 8;">
          <graphic>
             <ImageView fitHeight="85.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
