@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="487.0" style="-fx-background-color: #21201e;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="722.0" prefWidth="487.0" style="-fx-background-color: #21201e;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store_application.Store_Main_PageController">
    <children>
       <Region prefHeight="73.0" prefWidth="487.0" style="-fx-background-color: #282828;" />
       <VBox layoutX="60.0" layoutY="24.0" prefHeight="22.0" prefWidth="271.0">
@@ -58,7 +58,7 @@
       <Separator layoutY="73.0" prefHeight="3.0" prefWidth="487.0" />
       <AnchorPane layoutX="3.0" layoutY="76.0" prefHeight="200.0" prefWidth="481.0" style="-fx-border-radius: 6;">
          <children>
-            <ImageView fitHeight="200.0" fitWidth="481.0" pickOnBounds="true">
+            <ImageView fx:id="imageHero" fitHeight="200.0" fitWidth="481.0" pickOnBounds="true">
                <image>
                   <Image url="@Resources/placeholder.png" />
                </image>
@@ -71,19 +71,19 @@
          </font>
       </Label>
       <Separator layoutY="276.0" prefHeight="3.0" prefWidth="487.0" />
-      <AnchorPane layoutX="15.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
+      <AnchorPane fx:id="productRecommend1" layoutX="15.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
-            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+            <ImageView fx:id="imageRecommend1" fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
                   <Image url="@Resources/placeholder.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+            <Label fx:id="nameLabelRecommend1" layoutX="10.0" layoutY="117.0" text="Product Name">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="138.0" text="Price">
+            <Label fx:id="priceLabelRecommend1" layoutX="10.0" layoutY="138.0" text="Price">
                <font>
                   <Font size="13.0" />
                </font>
@@ -93,26 +93,26 @@
                   <Image url="@Resources/star-filled.png" />
                </image>
             </ImageView>
-            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+            <Label fx:id="ratingLabelRecommend1" layoutX="29.0" layoutY="157.0" text="Rating">
                <font>
                   <Font size="11.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="175.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
+      <AnchorPane fx:id="productRecommend2" layoutX="175.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
-            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+            <ImageView fx:id="imageRecommend2" fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
                   <Image url="@Resources/placeholder.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+            <Label fx:id="nameLabelRecommend2" layoutX="10.0" layoutY="117.0" text="Product Name">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="138.0" text="Price">
+            <Label fx:id="priceLabelRecommend2" layoutX="10.0" layoutY="138.0" text="Price">
                <font>
                   <Font size="13.0" />
                </font>
@@ -122,26 +122,26 @@
                   <Image url="@Resources/star-filled.png" />
                </image>
             </ImageView>
-            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+            <Label fx:id="ratingLabelRecommend2" layoutX="29.0" layoutY="157.0" text="Rating">
                <font>
                   <Font size="11.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="332.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
+      <AnchorPane fx:id="productRecommend3" layoutX="332.0" layoutY="330.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
-            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+            <ImageView fx:id="imageRecommend3" fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
                   <Image url="@Resources/placeholder.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+            <Label fx:id="nameLabelRecommend3" layoutX="10.0" layoutY="117.0" text="Product Name">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="138.0" text="Price">
+            <Label fx:id="priceLabelRecommend3" layoutX="10.0" layoutY="138.0" text="Price">
                <font>
                   <Font size="13.0" />
                </font>
@@ -151,26 +151,26 @@
                   <Image url="@Resources/star-filled.png" />
                </image>
             </ImageView>
-            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+            <Label fx:id="ratingLabelRecommend3" layoutX="29.0" layoutY="157.0" text="Rating">
                <font>
                   <Font size="11.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="15.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
+      <AnchorPane fx:id="productRecommend4" layoutX="15.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
-            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+            <ImageView fx:id="imageRecommend4" fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
                   <Image url="@Resources/placeholder.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+            <Label fx:id="nameLabelRecommend4" layoutX="10.0" layoutY="117.0" text="Product Name">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="138.0" text="Price">
+            <Label fx:id="priceLabelRecommend4" layoutX="10.0" layoutY="138.0" text="Price">
                <font>
                   <Font size="13.0" />
                </font>
@@ -180,26 +180,26 @@
                   <Image url="@Resources/star-filled.png" />
                </image>
             </ImageView>
-            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+            <Label fx:id="ratingLabelRecommend4" layoutX="29.0" layoutY="157.0" text="Rating">
                <font>
                   <Font size="11.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="175.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
+      <AnchorPane fx:id="productRecommend5" layoutX="175.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
-            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+            <ImageView fx:id="imageRecommend5" fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
                   <Image url="@Resources/placeholder.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+            <Label fx:id="nameLabelRecommend5" layoutX="10.0" layoutY="117.0" text="Product Name">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="138.0" text="Price">
+            <Label fx:id="priceLabelRecommend5" layoutX="10.0" layoutY="138.0" text="Price">
                <font>
                   <Font size="13.0" />
                </font>
@@ -209,26 +209,26 @@
                   <Image url="@Resources/star-filled.png" />
                </image>
             </ImageView>
-            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+            <Label fx:id="ratingLabelRecommend5" layoutX="29.0" layoutY="157.0" text="Rating">
                <font>
                   <Font size="11.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="332.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
+      <AnchorPane fx:id="productRecommend6" layoutX="332.0" layoutY="527.0" prefHeight="179.0" prefWidth="140.0" style="-fx-background-color: #cfcfcd; -fx-background-radius: 6;">
          <children>
-            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
+            <ImageView fx:id="imageRecommend6" fitHeight="103.0" fitWidth="121.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true">
                <image>
                   <Image url="@Resources/placeholder.png" />
                </image>
             </ImageView>
-            <Label layoutX="10.0" layoutY="117.0" text="Product Name">
+            <Label fx:id="nameLabelRecommend6" layoutX="10.0" layoutY="117.0" text="Product Name">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Label layoutX="10.0" layoutY="138.0" text="Price">
+            <Label fx:id="priceLabelRecommend6" layoutX="10.0" layoutY="138.0" text="Price">
                <font>
                   <Font size="13.0" />
                </font>
@@ -238,7 +238,7 @@
                   <Image url="@Resources/star-filled.png" />
                </image>
             </ImageView>
-            <Label layoutX="29.0" layoutY="157.0" text="Rating">
+            <Label fx:id="ratingLabelRecommend6" layoutX="29.0" layoutY="157.0" text="Rating">
                <font>
                   <Font size="11.0" />
                </font>
