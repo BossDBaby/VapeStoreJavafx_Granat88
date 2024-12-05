@@ -122,30 +122,29 @@
                </font>
             </Label>
             <TextField fx:id="lastnameTextField11" alignment="CENTER" layoutX="259.0" layoutY="124.0" prefHeight="26.0" prefWidth="205.0" promptText="Last Name" style="-fx-background-color: rgba(0,0,0,0.0);" />
-            <Label alignment="CENTER" layoutX="75.0" layoutY="190.0" style="-fx-background-color: #;" text="Enter Username" textFill="#b7a18fe3">
+            <Label alignment="CENTER" layoutX="75.0" layoutY="190.0" style="-fx-background-color: #;" text="Enter E-Mail" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="17.0" />
                </font>
             </Label>
-            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="237.0" layoutY="188.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter Username" style="-fx-background-color: rgba(0,0,0,0.0);">
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="259.0" layoutY="234.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter Username" style="-fx-background-color: rgba(0,0,0,0.0);">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font></TextField>
-            <Label alignment="CENTER" layoutX="78.0" layoutY="236.0" style="-fx-background-color: #;" text="Enter Password" textFill="#b7a18fe3">
+            <Label alignment="CENTER" layoutX="75.0" layoutY="237.0" style="-fx-background-color: #;" text="Enter Username" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="17.0" />
                </font>
             </Label>
-            <PasswordField fx:id="setpasswordPassField" alignment="CENTER" layoutX="237.0" layoutY="234.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter Password" style="-fx-background-color: rgba(0,0,0,0.0);">
+            <PasswordField fx:id="setpasswordPassField" alignment="CENTER" layoutX="259.0" layoutY="275.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter Password" style="-fx-background-color: rgba(0,0,0,0.0);">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font></PasswordField>
-            <Label alignment="CENTER" layoutX="78.0" layoutY="279.0" style="-fx-background-color: #;" text="Confirm Password" textFill="#b7a18fe3">
+            <Label alignment="CENTER" layoutX="81.0" layoutY="278.0" style="-fx-background-color: #;" text="Enter Password" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="16.0" />
                </font>
             </Label>
-            <PasswordField fx:id="confirmpasswordPassField" alignment="CENTER" layoutX="245.0" layoutY="276.0" prefHeight="26.0" prefWidth="205.0" promptText="Confirm Password" style="-fx-background-color: rgba(0,0,0,0.0);" />
             <Button fx:id="loginButton" layoutX="149.0" layoutY="346.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-radius: 20; -fx-background-color: rgba(215,222,220,0.9);" text="Sign Up" textFill="#121f30">
                <font>
                   <Font name="Verdana" size="18.0" />
@@ -165,6 +164,11 @@
                   <Font name="Verdana" size="14.0" />
                </font>
             </Label>
+            <TextField fx:id="emailTextField1" alignment="CENTER" layoutX="259.0" layoutY="188.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter E-Mail" style="-fx-background-color: rgba(0,0,0,0.0);">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextField>
          </children>
       </AnchorPane>
    </center>
