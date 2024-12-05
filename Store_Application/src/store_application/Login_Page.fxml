@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="489.0" style="-fx-background-color: #F2F2F0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store_application.Login_Page">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="489.0" style="-fx-background-color: #F2F2F0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store_application.Login_PageController">
    <top>
       <AnchorPane prefHeight="346.0" prefWidth="490.0" style="-fx-background-color: #071037;" BorderPane.alignment="CENTER">
          <children>
@@ -91,21 +91,21 @@
                   <Font name="Verdana" size="24.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="47.0" layoutY="195.0" text="Username" textFill="#b7a18fe3">
+            <Label alignment="CENTER" layoutX="100.0" layoutY="195.0" text="Username" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="usernameTextField" layoutX="185.0" layoutY="194.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Username" style="-fx-background-color: rgba(0,0,0,0.0); -fx-text-fill: #ee70b4;">
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="210.0" layoutY="194.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter Username" style="-fx-background-color: rgba(0,0,0,0.0); -fx-text-fill: #ee70b4;">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font></TextField>
-            <Label alignment="CENTER" layoutX="50.0" layoutY="262.0" text="Password" textFill="#b7a18fe3">
+            <Label alignment="CENTER" layoutX="100.0" layoutY="262.0" text="Password" textFill="#b7a18fe3">
                <font>
                   <Font name="Verdana" size="18.0" />
                </font>
             </Label>
-            <PasswordField fx:id="passwordPassField" layoutX="185.0" layoutY="260.0" prefHeight="26.0" prefWidth="262.0" promptText="Enter Password" style="-fx-background-color: rgba(0,0,0,0.0); -fx-text-fill: #ee70b4;">
+            <PasswordField fx:id="passwordPassField" alignment="CENTER" layoutX="214.0" layoutY="260.0" prefHeight="26.0" prefWidth="205.0" promptText="Enter Password" style="-fx-background-color: rgba(0,0,0,0.0); -fx-text-fill: #ee70b4;">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font></PasswordField>
@@ -118,7 +118,7 @@
                   <Font name="Verdana" size="13.0" />
                </font>
             </Label>
-            <Hyperlink fx:id="signUpHyperlink" layoutX="283.0" layoutY="409.0" text="Sign Up">
+            <Hyperlink fx:id="signUpHyperlink" layoutX="283.0" layoutY="409.0" onAction="#handleSignUp" text="Sign Up">
                <font>
                   <Font name="Verdana Bold" size="13.0" />
                </font>

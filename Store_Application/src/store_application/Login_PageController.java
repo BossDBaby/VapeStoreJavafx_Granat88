@@ -24,7 +24,7 @@ import java.sql.ResultSet;
 import java.sql.PreparedStatement;
 
 
-public class Login_Page {
+public class Login_PageController implements Initializable {
 
     @FXML
     private TextField usernameTextField;
@@ -43,13 +43,40 @@ public class Login_Page {
     @FXML
     private Button backToHomePageButton;  
     
-    public void loginButtonOnAction(){
-        invalidLoginLabel.setText("Invalid Login! Please try again. ");
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // Initialize any required setup here if needed
     }
-    
+
+    @FXML
+    public void loginButtonOnAction(ActionEvent event) {
+        validateLogin(); // Panggil fungsi validateLogin untuk memproses login
+    }
+
+    @FXML
     public void backToHomePageButtonOnAction(ActionEvent event) {
-        Stage stage = (Stage) backToHomePageButton.getScene().getWindow();
-        stage.close();
+        try {
+            // Load homepage (Store_Main_Page.fxml)
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Store_Main_Page.fxml"));
+            Parent homePageRoot = fxmlLoader.load();
+
+            // Set up a new Stage for the homepage
+            Stage stage = new Stage();
+            stage.setScene(new Scene(homePageRoot));
+            stage.show();
+
+            // Close the current login window
+            Stage currentStage = (Stage) backToHomePageButton.getScene().getWindow();
+            currentStage.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Show error alert if the FXML file cannot be loaded
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setTitle("Error");
+            errorAlert.setHeaderText(null);
+            errorAlert.setContentText("Failed to load the Home Page. Please try again later.");
+            errorAlert.showAndWait();
+        }
     }
 
     private void validateLogin() {
@@ -71,7 +98,7 @@ public class Login_Page {
         String verifyLogin = "SELECT count(1) FROM user_account WHERE username = ? AND password = ?";
 
         try {
-            // Gunakan PreparedStatement
+            // Gunakan PreparedStatement untuk query database
             PreparedStatement preparedStatement = connectDB.prepareStatement(verifyLogin);
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, password);
@@ -90,6 +117,9 @@ public class Login_Page {
                     successAlert.setHeaderText(null);
                     successAlert.setContentText("Welcome, " + username + "!");
                     successAlert.showAndWait();
+
+                    // Buka halaman beranda setelah login berhasil
+                    backToHomePageButtonOnAction(null); // Arahkan ke halaman beranda
                 } else {
                     invalidLoginLabel.setText("Invalid username or password.");
                     invalidLoginLabel.setStyle("-fx-text-fill: red;");
@@ -99,8 +129,8 @@ public class Login_Page {
             e.printStackTrace();
             invalidLoginLabel.setText("Database connection error.");
             invalidLoginLabel.setStyle("-fx-text-fill: red;");
+        }
     }
-}
 
     @FXML
     private void handleSignUp(ActionEvent event) {
@@ -111,7 +141,6 @@ public class Login_Page {
 
             // Set up a new Stage for the Sign-Up page
             Stage stage = new Stage();
-            stage.setTitle("Sign Up");
             stage.setScene(new Scene(signUpRoot));
             stage.show();
 
@@ -129,4 +158,3 @@ public class Login_Page {
         }
     }
 }
-
